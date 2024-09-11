@@ -1,0 +1,24 @@
+version: "2"
+checks:
+  argument-count:
+    enabled: true
+  complexity:
+    enabled: true
+  duplication:
+    enabled: true
+
+engines:
+  rubocop:
+    enabled: true
+  eslint:
+    enabled: true
+
+ratings:
+  paths:
+  - "**/*.rb"
+  - "**/*.js"
+  - "**/*.jsx"
+
+exclude_paths:
+  - "test/"
+  - "vendor/"
